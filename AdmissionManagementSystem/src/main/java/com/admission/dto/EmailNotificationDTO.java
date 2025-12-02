@@ -5,9 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Data Transfer Object for Email Notification
- */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -6,10 +6,7 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
-/**
- * Student Entity representing approved students
- * Created when an application is marked as SELECTED
- */
+
 @Entity
 @Table(name = "students")
 @Data

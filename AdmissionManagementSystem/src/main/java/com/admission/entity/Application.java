@@ -8,9 +8,6 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
-/**
- * Application Entity representing student admission applications
- */
 @Entity
 @Table(name = "applications")
 @Data

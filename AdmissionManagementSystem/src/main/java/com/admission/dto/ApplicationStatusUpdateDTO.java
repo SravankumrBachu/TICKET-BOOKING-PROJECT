@@ -7,9 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import jakarta.validation.constraints.NotBlank;
 
-/**
- * Data Transfer Object for updating Application Status
- */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,5 +17,5 @@ public class ApplicationStatusUpdateDTO {
     @NotBlank(message = "Status is required")
     private ApplicationStatus status;
 
-    private String rejectionReason; // Required if status is REJECTED
+    private String rejectionReason; 
 }

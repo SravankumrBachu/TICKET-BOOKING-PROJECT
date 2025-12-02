@@ -6,10 +6,6 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.Set;
-
-/**
- * Course Entity representing available courses for admission
- */
 @Entity
 @Table(name = "courses")
 @Data
@@ -30,10 +26,10 @@ public class Course {
     private String description;
 
     @Column(nullable = false)
-    private Integer duration; // Duration in months
+    private Integer duration; 
 
     @Column(nullable = false)
-    private String level; // Beginner, Intermediate, Advanced
+    private String level; 
 
     @Column(nullable = false)
     private Boolean active = true;

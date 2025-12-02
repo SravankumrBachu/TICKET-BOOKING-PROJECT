@@ -11,10 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Service class for Course management
- * Handles business logic for course operations
- */
 @Service
 @RequiredArgsConstructor
 @Transactional
@@ -23,9 +19,6 @@ public class CourseService {
     private final CourseRepository courseRepository;
     private final ModelMapper modelMapper;
 
-    /**
-     * Get all active courses
-     */
     public List<CourseDTO> getAllActiveCourses() {
         return courseRepository.findByActive(true)
                 .stream()
@@ -33,9 +26,6 @@ public class CourseService {
                 .collect(Collectors.toList());
     }
 
-    /**
-     * Get all courses
-     */
     public List<CourseDTO> getAllCourses() {
         return courseRepository.findAll()
                 .stream()
@@ -43,27 +33,18 @@ public class CourseService {
                 .collect(Collectors.toList());
     }
 
-    /**
-     * Get course by ID
-     */
     public CourseDTO getCourseById(Long courseId) {
         Course course = courseRepository.findById(courseId)
                 .orElseThrow(() -> new RuntimeException("Course not found with id: " + courseId));
         return modelMapper.map(course, CourseDTO.class);
     }
 
-    /**
-     * Create a new course
-     */
     public CourseDTO createCourse(CourseDTO courseDTO) {
         Course course = modelMapper.map(courseDTO, Course.class);
         Course savedCourse = courseRepository.save(course);
         return modelMapper.map(savedCourse, CourseDTO.class);
     }
 
-    /**
-     * Update an existing course
-     */
     public CourseDTO updateCourse(Long courseId, CourseDTO courseDTO) {
         Course course = courseRepository.findById(courseId)
                 .orElseThrow(() -> new RuntimeException("Course not found with id: " + courseId));
@@ -78,16 +59,10 @@ public class CourseService {
         return modelMapper.map(updatedCourse, CourseDTO.class);
     }
 
-    /**
-     * Delete a course
-     */
     public void deleteCourse(Long courseId) {
         courseRepository.deleteById(courseId);
     }
 
-    /**
-     * Get courses by level
-     */
     public List<CourseDTO> getCoursesByLevel(String level) {
         return courseRepository.findByLevel(level)
                 .stream()

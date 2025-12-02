@@ -1,3 +1,18 @@
-/Users/sravan/Desktop/zip/TICKET BOOKING PROJECT/AdmissionManagementSystem/src/main/java/com/admission/entity/Course.java
-/Users/sravan/Desktop/zip/TICKET BOOKING PROJECT/AdmissionManagementSystem/src/main/java/com/admission/entity/Application.java
-/Users/sravan/Desktop/zip/TICKET BOOKING PROJECT/AdmissionManagementSystem/src/main/java/com/admission/entity/Student.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/dto/ApplicationRequestDTO.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/entity/Course.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/controller/CourseController.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/service/EmailService.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/dto/CourseDTO.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/controller/ApplicationController.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/dto/ApplicationStatusUpdateDTO.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/dto/ApplicationResponseDTO.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/repository/StudentRepository.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/repository/CourseRepository.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/service/CourseService.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/repository/ApplicationRepository.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/AdmissionManagementApplication.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/config/ApplicationConfig.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/entity/Application.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/service/ApplicationService.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/dto/EmailNotificationDTO.java
+/Users/sravan/Desktop/zip/zoho_assessment/AdmissionManagementSystem/src/main/java/com/admission/entity/Student.java

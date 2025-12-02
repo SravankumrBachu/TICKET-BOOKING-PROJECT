@@ -2,23 +2,19 @@ package com.admission.service;
 
 import com.admission.entity.Application;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-/**
- * Service class for Email notifications
- * Sends email notifications on application status changes
- */
 @Service
 @RequiredArgsConstructor
 public class EmailService {
 
-    private final JavaMailSender mailSender;
+    @Autowired
+    private  JavaMailSender mailSender;
 
-    /**
-     * Send status change notification email
-     */
     public void sendStatusChangeNotification(Application application) {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
@@ -31,13 +27,9 @@ public class EmailService {
             mailSender.send(message);
         } catch (Exception e) {
             System.err.println("Error sending email: " + e.getMessage());
-            // Don't throw exception to prevent application flow from breaking
         }
     }
 
-    /**
-     * Build email content based on application status
-     */
     private String buildEmailContent(Application application) {
         StringBuilder content = new StringBuilder();
         content.append("Dear ").append(application.getApplicantName()).append(",\n\n");

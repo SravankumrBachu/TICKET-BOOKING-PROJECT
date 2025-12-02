@@ -11,9 +11,7 @@ import jakarta.validation.constraints.Pattern;
 
 import java.time.LocalDateTime;
 
-/**
- * Data Transfer Object for Application (Request)
- */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
